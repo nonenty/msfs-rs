@@ -27,11 +27,11 @@
 //! ]
 //! ```
 
-mod msfs;
+mod msfs_core;
 pub mod sim_connect;
 pub mod sys;
 
-pub use msfs::*;
+pub use msfs_core::*;
 
 #[cfg(any(target_arch = "wasm32", doc))]
 pub mod legacy;
